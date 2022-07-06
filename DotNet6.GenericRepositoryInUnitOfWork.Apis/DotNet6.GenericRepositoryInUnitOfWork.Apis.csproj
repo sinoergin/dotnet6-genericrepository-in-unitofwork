@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="6.0.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DotNet6.GenericRepositoryInUnitOfWork.Database\DotNet6.GenericRepositoryInUnitOfWork.Database.csproj" />
+    <ProjectReference Include="..\DotNet6.GenericRepositoryInUnitOfWork.GenericRepository\DotNet6.GenericRepositoryInUnitOfWork.GenericRepository.csproj" />
+    <ProjectReference Include="..\DotNet6.GenericRepositoryInUnitOfWork.UoW\DotNet6.GenericRepositoryInUnitOfWork.UoW.csproj" />
+  </ItemGroup>
+
+</Project>

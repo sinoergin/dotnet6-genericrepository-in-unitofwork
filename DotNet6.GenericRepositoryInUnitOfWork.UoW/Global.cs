@@ -1,0 +1,3 @@
+﻿global using DotNet6.GenericRepositoryInUnitOfWork.Database.Entity;
+global using DotNet6.GenericRepositoryInUnitOfWork.GenericRepository;
+global using Microsoft.EntityFrameworkCore;
