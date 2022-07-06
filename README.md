@@ -1,0 +1,1 @@
+DotNet6.GenericRepositoryInUnitOfWork
