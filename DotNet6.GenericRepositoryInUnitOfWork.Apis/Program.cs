@@ -2,7 +2,7 @@ using DotNet6.GenericRepositoryInUnitOfWork.Apis;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddMyDatabase();
+builder.Services.AddGenericRepositoryInUnitOfWorkAppApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -22,8 +22,8 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapToCategoryApi();
-app.MapToProductApi();
+app.MapCategoryApiRoutes();
+app.MapProductApiRoutes();
 
 app.Run();
 
